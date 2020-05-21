@@ -1,0 +1,509 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\QuoteListTools.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 217, 41
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About QuoteListTools"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,9,20,20
+    LTEXT           "QuoteListTools Version 1.3.3.28",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,160,7,50,14,WS_GROUP
+    LTEXT           "Last Updated: 6 December 2004",IDC_STATIC,40,22,116,11
+END
+
+IDD_QuoteListTools_DIALOG DIALOGEX 0, 0, 554, 412
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "QuoteListTools"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,33,23,73,13
+    EDITTEXT        IDC_PORT,129,23,60,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Start",IDC_START,192,23,29,12
+    PUSHBUTTON      "Stop",IDC_STOP,225,23,29,12
+    CONTROL         "IPAddress1",IDC_IPADDRESS3,"SysIPAddress32",WS_TABSTOP,297,52,79,13,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_GROUPCOMBO,24,50,106,74,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,137,50,46,13
+    PUSHBUTTON      "Remove",IDC_REMOVE,187,50,46,13
+    CONTROL         "Put Data to DCache",IDC_PUTDATATOCACHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,73,78,13
+    PUSHBUTTON      "Log Filter",IDC_FILTER,85,73,33,12
+    PUSHBUTTON      "Socket Server",IDC_SOCKET,121,73,49,12
+    PUSHBUTTON      "Save Data",IDC_SAVE_DATA,171,73,37,12
+    PUSHBUTTON      "Retrieve Data",IDC_RETRIEVE_DATA,211,73,47,12
+    EDITTEXT        IDC_PAGENO,275,16,93,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FID,455,16,32,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Search",IDC_SEARCH,371,16,36,12
+    PUSHBUTTON      "Don't Display",IDC_DISPLAY2,442,78,6,6
+    CONTROL         "Log to File",IDC_OUTPUTTOFILE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    EDITTEXT        IDC_FILENAME2,442,73,6,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear Log",IDC_CLEAR2,442,73,6,6
+    PUSHBUTTON      "Don't Display",IDC_DISPLAY1,59,87,67,15,0,WS_EX_TRANSPARENT
+    CONTROL         "Log to File",IDC_OUTPUTTOFILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,91,46,10,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_FILENAME,177,89,135,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Clear Log",IDC_CLEAR1,479,88,67,15,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Exit",ID_EXIT,438,73,85,14,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Dcache Tools",IDC_STATICGROUP_BOX,7,88,540,316
+    GROUPBOX        "DCache",IDC_STATIC,442,73,8,9
+    GROUPBOX        "Local Address",IDC_STATIC,15,14,248,26
+    LTEXT           "IP:",IDC_STATIC,21,25,10,8
+    LTEXT           "Port:",IDC_STATIC,111,25,17,11
+    GROUPBOX        "Group",IDC_STATIC,15,40,248,28
+    GROUPBOX        "Receiving.",IDC_STATUSLISTFLAME,442,73,8,9
+    PUSHBUTTON      "Drop",IDC_DROP,409,16,24,12
+    PUSHBUTTON      "List All Pages",IDC_LISTALLPAGES,275,30,50,12
+    PUSHBUTTON      "List All Drop Pages",IDC_LISTALLDROPPAGES,327,30,69,12
+    PUSHBUTTON      "List All Fids",IDC_LIST_ALL_FIDS,399,30,55,12
+    GROUPBOX        "Page No:",IDC_STATIC,273,6,274,66
+    PUSHBUTTON      "List All Drop Fids",IDC_LIST_ALL_DROP_FID,442,73,6,6
+    PUSHBUTTON      "Drop Fid",IDC_TEST_DROP,487,16,32,12
+    PUSHBUTTON      "Add Data Test ",IDC_TEST,442,73,6,6
+    LTEXT           "Fid:",IDC_STATIC,441,18,12,8
+    PUSHBUTTON      "Show Statistic",IDC_SHOW_STAT,442,73,6,6
+    LTEXT           "Save data file in %s",IDC_FILE_MSG,59,102,299,8
+    CONTROL         "Log with Time",IDC_TIMECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    CONTROL         "Log Statistic Data",IDC_STATISTIC_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",ACS_TRANSPARENT | ACS_AUTOPLAY | WS_TABSTOP,236,47,20,17
+    ICON            IDI_GREEN_LIGHT,ID_INDICATOR_STATUS,236,47,20,20
+    PUSHBUTTON      "Start",IDC_RETRIEVE,443,52,26,12
+    EDITTEXT        IDC_PORT2,405,52,35,13,ES_AUTOHSCROLL
+    LTEXT           "Port:",IDC_STATIC,385,54,17,11
+    LTEXT           "IP:",IDC_STATIC,283,54,14,8
+    GROUPBOX        "TCP Retrieval",IDC_STATIC,275,43,245,25
+    CONTROL         "Show Detail",IDC_MSG_DETAIL_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    CONTROL         "Show Info",IDC_SHOW_INFO_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    LTEXT           "No of Faults: ",IDC_FAULTS,493,104,53,9
+    PUSHBUTTON      "Load Setting",ID_LOAD_SETTING,442,73,6,6
+    PUSHBUTTON      "Save Setting",ID_SAVE_SETTING,442,73,6,6
+    GROUPBOX        "Receive",IDC_STATIC,7,6,261,65
+    CONTROL         "IPAddress1",IDC_IPADDRESS2,"SysIPAddress32",0x0,442,73,6,6
+    EDITTEXT        IDC_PORT3,442,73,6,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "Start",IDC_START2,442,73,6,6,NOT WS_TABSTOP
+    PUSHBUTTON      "Stop",IDC_STOP2,442,73,6,6,NOT WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD2,442,73,6,6,NOT WS_TABSTOP
+    PUSHBUTTON      "Remove",IDC_REMOVE2,442,73,6,6,NOT WS_TABSTOP
+    GROUPBOX        "Local Address",IDC_STATIC,442,73,8,9
+    LTEXT           "IP:",IDC_STATIC,442,73,8,8
+    LTEXT           "Port:",IDC_STATIC,442,73,8,8
+    GROUPBOX        "Channel",IDC_STATIC,442,73,8,9
+    COMBOBOX        IDC_GROUPCOMBO2,442,73,16,74,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL
+    GROUPBOX        "Send",IDC_STATIC,442,73,8,9
+    PUSHBUTTON      "Send Messages",IDC_SEND,442,73,6,6,NOT WS_TABSTOP
+    PUSHBUTTON      "Stop",IDC_RETRIEVE_STOP,471,52,26,12
+    CONTROL         "Auto",IDC_AUTO_2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    CONTROL         "from DCache",IDC_TCP_DCACHE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,329,42,57,10,WS_EX_TRANSPARENT
+    CONTROL         "Animate1",IDC_ANIMATE2,"SysAnimate32",ACS_TRANSPARENT | ACS_AUTOPLAY | WS_TABSTOP,499,47,20,17
+    ICON            IDI_GREEN_LIGHT,ID_INDICATOR_STATUS2,499,47,20,20
+    PUSHBUTTON      "Drop All",IDC_REMOVE_ALL,459,30,38,11
+    PUSHBUTTON      "ShowQuoteList",IDC_SHOWQUOTELIST,7,84,51,15,0,WS_EX_TRANSPARENT
+    CONTROL         "Update Only",IDC_UPDATE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,442,73,8,8
+    CONTROL         "List1",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,13,113,527,284
+    CONTROL         "List2",IDC_LIST2,"SysListView32",WS_BORDER | WS_TABSTOP,13,113,527,284
+    COMBOBOX        IDC_LISTCHOICE_COMBO,361,87,70,78,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,13,113,527,284
+    PUSHBUTTON      "Reg",IDC_REGISTER,500,30,28,11
+END
+
+IDD_FILTERDIALOG DIALOG 0, 0, 229, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO2,14,12,145,79,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PAGENO,50,29,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIDNO,50,46,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MSGTYPE,50,63,108,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Add",IDC_ADD,172,7,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,172,25,50,14
+    PUSHBUTTON      "Close",ID_CLOSE,172,93,50,14
+    GROUPBOX        "Filter",IDC_STATIC,7,3,158,104
+    LTEXT           "Page No:",IDC_STATIC,13,31,31,8
+    LTEXT           "Fid No:",IDC_STATIC,13,48,31,8
+    LTEXT           "Msg Type:",IDC_STATIC,13,65,34,8
+    LTEXT           "( Ignored criteria using empty field or -1)",IDC_STATIC,36,95,124,8
+    EDITTEXT        IDC_DPID,50,80,108,12,ES_AUTOHSCROLL
+    LTEXT           "DPID:",IDC_STATIC,14,83,20,8
+END
+
+IDD_TEXT DIALOG 0, 0, 385, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selected Text "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,164,138,50,14
+    EDITTEXT        IDC_NO_IN_TEXT,13,89,356,38,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORIG_TEXT,13,17,356,38,ES_AUTOHSCROLL
+    GROUPBOX        "Original Text",IDC_STATIC,7,7,370,55
+    GROUPBOX        "Text -> No",IDC_STATIC,7,78,371,57
+    PUSHBUTTON      "Tranlate",IDC_TRANSLATE,84,65,214,11
+    PUSHBUTTON      "GB Code",IDC_BUTTON1,319,65,59,10
+END
+
+IDD_STAT_DIALOG DIALOGEX 0, 0, 564, 233
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Statistics"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,24,32,368,131,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh",IDC_REFRESH_BUTTON,507,19,50,14
+    PUSHBUTTON      "Reset All",IDC_RESET_BUTTON,507,38,50,14
+    PUSHBUTTON      "Close",IDCANCEL,507,212,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,24,45,465,167
+    CONTROL         "List1",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,24,44,465,167
+    LTEXT           "Page No:",IDC_PAGE_STATIC,25,32,31,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PAGE_EDIT,57,31,107,12,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "Retrieve",IDC_RETREIVE_BUTTON,164,31,63,12,0,WS_EX_TRANSPARENT
+    CONTROL         "Tab5",IDC_TAB,"SysTabControl32",0x0,7,7,497,219
+    LTEXT           "",IDC_SELECTION_TEXT,25,212,465,10,0,WS_EX_TRANSPARENT
+END
+
+IDD_SEND_MSG_DIALOG DIALOG 0, 0, 285, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Send Message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PAGE,62,14,63,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PAGE2,140,14,63,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECTYPE,62,38,142,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIDNO,62,81,142,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIDVALUE,62,104,142,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_MSGTYPE,62,126,142,116,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SEND_INTERVAL,62,150,142,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_SEND,216,11,61,14
+    PUSHBUTTON      "Exit",IDC_EXIT,216,32,61,14
+    LTEXT           "By Page: ",IDC_STATIC,13,16,32,8
+    LTEXT           "By RecType:",IDC_STATIC,13,40,42,8
+    LTEXT           "Fid No:",IDC_STATIC,13,83,24,8
+    LTEXT           "Fid Value:",IDC_STATIC,13,105,32,8
+    LTEXT           "Msg Type:",IDC_STATIC,13,129,34,8
+    LTEXT           "Send Interval:",IDC_STATIC,13,152,45,8
+    LTEXT           "(in Milliseconds)",IDC_STATIC,208,152,50,8
+    LTEXT           "---",IDC_STATIC,128,16,8,8
+    LTEXT           "(Ignored RecType using -1)",IDC_STATIC,62,52,87,8
+    GROUPBOX        "Criteria",IDC_STATIC,7,7,205,58
+    LTEXT           "(Ignored Page using empty field )",IDC_STATIC,63,28,104,8
+    GROUPBOX        "Message Content",IDC_STATIC,7,67,270,104
+    CONTROL         "Repeat",IDC_REPEAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,58,39,10
+END
+
+IDD_LOG_SCHEDULE_DIALOG DIALOG 0, 0, 180, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log Schedule"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,123,7,50,14
+    LTEXT           "From:",IDC_STATIC,7,7,18,8
+    LTEXT           "To:",IDC_STATIC,7,23,12,8
+    EDITTEXT        IDC_FROM,30,7,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO,30,21,75,12,ES_AUTOHSCROLL
+END
+
+IDD_SOCKET_SERVER_DIALOG DIALOG 0, 0, 171, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Socket Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Port",IDC_STATIC,90,7,70,24
+    GROUPBOX        "Current Status",IDC_STATIC,7,7,77,24
+    LTEXT           "DISABLE",IDC_SERVER_STATUS,31,17,43,10
+    PUSHBUTTON      "Start",IDC_START,7,31,49,14
+    PUSHBUTTON      "Stop",IDC_STOP,61,31,49,14
+    PUSHBUTTON      "Exit",IDC_EXIT,115,31,49,14
+    EDITTEXT        IDC_PORT,95,16,59,11,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,3,29
+ PRODUCTVERSION 1,3,3,29
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "QuoteListTools MFC Application "
+            VALUE "FileVersion", "1.3.3.29"
+            VALUE "InternalName", "QuoteListTools"
+            VALUE "LegalCopyright", "Copyright (C) 2001 "
+            VALUE "OriginalFilename", "QuoteListTools.EXE"
+            VALUE "ProductName", "QuoteListTools Application"
+            VALUE "ProductVersion", "1.3.3.29"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_QuoteListTools_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 547
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 405
+    END
+
+    IDD_FILTERDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_STAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 557
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+    END
+
+    IDD_SEND_MSG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_LOG_SCHEDULE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_SOCKET_SERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\QuoteListTools.ico"
+IDI_GREEN_LIGHT         ICON                    "res\\greenlit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_RED_FLASHING        AVI                     "res\\red.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SEND_MSG_DIALOG DLGINIT
+BEGIN
+    IDC_MSGTYPE, 0x403, 17, 0
+0x474d, 0x5f54, 0x4f4c, 0x4f47, 0x524e, 0x5145, 0x4555, 0x5453, "\000" 
+    IDC_MSGTYPE, 0x403, 18, 0
+0x474d, 0x5f54, 0x4f4c, 0x4f47, 0x524e, 0x5345, 0x4f50, 0x534e, 0x0045, 
+
+    IDC_MSGTYPE, 0x403, 13, 0
+0x474d, 0x5f54, 0x4441, 0x5744, 0x5441, 0x4843, "\000" 
+    IDC_MSGTYPE, 0x403, 16, 0
+0x474d, 0x5f54, 0x4544, 0x454c, 0x4554, 0x4157, 0x4354, 0x0048, 
+    IDC_MSGTYPE, 0x403, 13, 0
+0x474d, 0x5f54, 0x4e53, 0x5041, 0x4853, 0x544f, "\000" 
+    IDC_MSGTYPE, 0x403, 19, 0
+0x474d, 0x5f54, 0x4144, 0x4154, 0x4550, 0x4d52, 0x5349, 0x4953, 0x4e4f, 
+"\000" 
+    IDC_MSGTYPE, 0x403, 16, 0
+0x474d, 0x5f54, 0x4f46, 0x4352, 0x5545, 0x4450, 0x5441, 0x0045, 
+    IDC_MSGTYPE, 0x403, 11, 0
+0x474d, 0x5f54, 0x5055, 0x4144, 0x4554, "\000" 
+    IDC_MSGTYPE, 0x403, 15, 0
+0x474d, 0x5f54, 0x4556, 0x4952, 0x5946, 0x5953, 0x434e, "\000" 
+    IDC_MSGTYPE, 0x403, 15, 0
+0x474d, 0x5f54, 0x4c43, 0x534f, 0x4e49, 0x5247, 0x4e55, "\000" 
+    IDC_MSGTYPE, 0x403, 9, 0
+0x474d, 0x5f54, 0x5244, 0x504f, "\000" 
+    IDC_MSGTYPE, 0x403, 20, 0
+0x474d, 0x5f54, 0x4e49, 0x5254, 0x4441, 0x5941, 0x4552, 0x5542, 0x4c49, 
+0x0044, 
+    IDC_MSGTYPE, 0x403, 23, 0
+0x474d, 0x5f54, 0x4e49, 0x5254, 0x4441, 0x5941, 0x4f43, 0x5252, 0x4345, 
+0x4954, 0x4e4f, "\000" 
+    IDC_MSGTYPE, 0x403, 17, 0
+0x474d, 0x5f54, 0x4553, 0x5652, 0x5245, 0x5453, 0x5441, 0x5355, "\000" 
+    IDC_MSGTYPE, 0x403, 10, 0
+0x474d, 0x5f54, 0x4c41, 0x5649, 0x0045, 
+    IDC_MSGTYPE, 0x403, 21, 0
+0x474d, 0x5f54, 0x4152, 0x5349, 0x4845, 0x4e41, 0x5244, 0x5145, 0x4555, 
+0x5453, "\000" 
+    IDC_MSGTYPE, 0x403, 19, 0
+0x474d, 0x5f54, 0x4152, 0x5349, 0x4845, 0x4e41, 0x5244, 0x5045, 0x594c, 
+"\000" 
+    IDC_MSGTYPE, 0x403, 18, 0
+0x474d, 0x5f54, 0x5953, 0x5453, 0x4d45, 0x454d, 0x5353, 0x4741, 0x0045, 
+
+    0
+END
+
+IDD_QuoteListTools_DIALOG DLGINIT
+BEGIN
+    IDC_LISTCHOICE_COMBO, 0x403, 12, 0
+0x4344, 0x6361, 0x6568, 0x4c20, 0x7369, 0x0074, 
+    IDC_LISTCHOICE_COMBO, 0x403, 12, 0
+0x7453, 0x7461, 0x7375, 0x4c20, 0x7369, 0x0074, 
+    IDC_LISTCHOICE_COMBO, 0x403, 11, 0
+0x7551, 0x746f, 0x2065, 0x694c, 0x7473, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About QuoteListTools..."
+    ID_INDICATOR_STATUS     "STATUS"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\QuoteListTools.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

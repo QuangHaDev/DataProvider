@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/NGN2/Lib/DCache/int/QuoteListTools", XVBFAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{30A4D23F-C52C-445D-9123-210E19C7D1E6}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;../../../TCPCtrl/Int/Include;./include;../../../DCache/Int/Include;../../../SystemServices/Int/Include;../../../DataCtrl/Int/Include;../../../MsgObject/Int/Include;../../../PermissionManager/Int/Include;../../../feclasses/int/include;../../../../app/ngsmp/int;../../../../app/dataserver/;../../../fecontrols/RTSPanelDll/int/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\QuoteListTools.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\DataCtrl\INT\release\datactrl.dll release
+copy ..\..\..\Dcache\INT\release\dcache.dll release
+copy ..\..\..\TcpCtrl\INT\release\TcpCtrl.dll release</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\QuoteListTools.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\QuoteListTools.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\QuoteListTools.exe</OutputFile>
+      <AdditionalLibraryDirectories>../RELEASE;../../..\MsgObject\int\RELEASE;../../../SystemServices/int/RELEASE\;../../..\DataCtrl\int\RELEASE;../../..\TCPCtrl\int\RELEASE;../../../DCache/int/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dcache.lib;SystemServices.lib;MsgObject.lib;DataCtrl.lib;TCPCtrl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\8.1\Include\um;../../include;../include;..\..\..\SystemServices\INT\Include;..\..\..\MsgObject\INT\Include;..\..\..\DataCtrl\INT\Include;..\..\..\Dcache\INT\Include;..\..\..\DataManager\INT\Include;..\..\..\TCPCtrl\INT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\QuoteListTools.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy ..\..\..\DataCtrl\INT\debug\datactrl.dll debug
+copy ..\..\..\Dcache\INT\debug\dcache.dll debug
+copy ..\..\..\TcpCtrl\INT\debug\TcpCtrl.dll debug</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\QuoteListTools.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\QuoteListTools.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\QuoteListTools.exe</OutputFile>
+      <AdditionalLibraryDirectories>../debug;../../..\MsgObject\int\debug;../../../SystemServices/int/debug\;..\..\..\DataCtrl\INT\debug;..\..\..\Dcache\INT\debug;..\..\..\DataManager\int\Debug_Dongle\;..\..\..\TCPCtrl\INT\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dcache.lib;SystemServices.lib;MsgObject.lib;DataCtrl.lib;TCPCtrl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ABTPanelEx.cpp" />
+    <ClCompile Include="DTFidIterator.cpp" />
+    <ClCompile Include="JFile.cpp" />
+    <ClCompile Include="JRegistry.cpp" />
+    <ClCompile Include="LogFilterDlg.cpp" />
+    <ClCompile Include="LogSchedule.cpp" />
+    <ClCompile Include="MsgQueueManager.cpp" />
+    <ClCompile Include="NGUtil.cpp" />
+    <ClCompile Include="QTFidIterator.cpp" />
+    <ClCompile Include="QuoteListTools.cpp" />
+    <ClCompile Include="QuoteListToolsDlg.cpp" />
+    <ClCompile Include="SelTextDlg.cpp" />
+    <ClCompile Include="SendMessageDialog.cpp" />
+    <ClCompile Include="SocketServerDlg.cpp" />
+    <ClCompile Include="StatisticDlg.cpp" />
+    <ClCompile Include="StatisticPage.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STFidIterator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QuoteListTools.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ABTPanelEx.h" />
+    <ClInclude Include="DTFidIterator.h" />
+    <ClInclude Include="JFile.h" />
+    <ClInclude Include="JRegistry.h" />
+    <ClInclude Include="LogFilterDlg.h" />
+    <ClInclude Include="LogSchedule.h" />
+    <ClInclude Include="MsgQueueManager.h" />
+    <ClInclude Include="NGUtil.h" />
+    <ClInclude Include="QTFidIterator.h" />
+    <ClInclude Include="queue.h" />
+    <ClInclude Include="QueueMgr.h" />
+    <ClInclude Include="QuoteListTools.h" />
+    <ClInclude Include="QuoteListToolsDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelTextDlg.h" />
+    <ClInclude Include="SendMessageDialog.h" />
+    <ClInclude Include="SocketServerDlg.h" />
+    <ClInclude Include="StatisticDlg.h" />
+    <ClInclude Include="StatisticPage.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="STFidIterator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="res\greenlit.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\QuoteListTools.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\QuoteListTools.rc2" />
+    <CustomBuild Include="res\red.avi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

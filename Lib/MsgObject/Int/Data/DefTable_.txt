@@ -1,0 +1,417 @@
+!
+!
+!   Version  1.00       21-09-2000
+!
+!   Definition.txt, Master Field Identifiers and other definition
+!   --------------------------------------------------------------
+!
+!   This definition table contains a complete list of FID used in Field
+!   Lists and, for each FID, gives the field name, field desc,
+!   data type code, group, ripple FID and the vector position of the FID
+!
+!   Each field entry is followed by a short description of the nature
+!   of the data contained in the field.
+!
+!FID	Field Name  	Field Desc				Data Type Code	Priority
+!---    ----------  	----------    			    	--------------  --------
+!
+1	FID_REC_TYPE	"Record Type"					1	1
+2	FID_WRT_DSK	"Write Information To Disk"			1	2
+3	FID_DTL		"Days To Live"					1	3
+4	FID_TIME_ZONE	"Time Zone(0-23)"				1
+5	FID_SUSPEN_FG	"Suspension Flag"				1
+6	FID_OPEN_FG	"Open Flag"					1
+7	FID_TEST_FG	"Test Stock Flag"				1
+8	FID_MKT_CODE	"Market Code"					1
+9	FID_SUB_MKT	"Sub Market Code"				1
+10	FID_EAS_FG	"EAS Flag"					1
+11	FID_SORT_ID	"Sorting I.D."					1
+12	FID_AUTO_FG	"Automatic Flag"				1
+13	FID_SHSELL_FG	"Short Sell Flag"				1
+14	FID_CCASS_FG	"CCASS Flag"					1
+15	FID_IDSS_FG	"Intra-day Shortselling Flag"			1
+16	FID_SDE_FG	"Stamp Duty Exemption Flag"			1
+17	FID_LIST_ST	"Listing Status"				1
+18	FID_BID_FG	"Bid Flag"					1
+19	FID_ASK_FG	"Ask Flag"					1
+20	FID_NOM_TYPE	"Nominal Price Type"				1
+21	FID_CLS_TYPE	"Previous Closing price Type"			1
+22	FID_DELAY_FG	"Delay Flag"					1
+23	FID_NOMUD_IND	"Nominal/Last Up Down Indicator"		1
+24	FID_CP_FG	"Call/Put Flag"					1
+25	FID_EFN_FG	"EFN Flag"					1
+26	FID_STYLE	"Style"						1
+27	FID_YMT_IND	"Yield to Maturity Indicator"			1
+28	FID_BOND_STS	"Bond Status"					1
+29	FID_SPARE_UC1	"Spare Flag 1"					1
+30	FID_SPARE_UC2	"Spare Flag 2"					1
+31	FID_REV_UCH1	"Reserve Field 1"				1
+32	FID_REV_UCH2	"Reserve Field 2"				1
+33	FID_REV_UCH3	"Reserve Field 3"				1
+34	FID_REV_UCH4	"Reserve Field 4"				1
+35	FID_REV_UCH5	"Reserve Field 5"				1
+36	FID_REV_UCH6	"Reserve Field 6"				1
+37	FID_REV_UCH7	"Reserve Field 7"				1
+38	FID_REV_UCH8	"Reserve Field 8"				1
+39	FID_REV_UCH9	"Reserve Field 9"				1
+40	FID_REV_UCH10	"Reserve Field 10"				1
+41	FID_REV_UCH11	"Reserve Field 11"				1
+42	FID_REV_UCH12	"Reserve Field 12"				1
+43	FID_REV_UCH13	"Reserve Field 13"				1
+44	FID_REV_UCH14	"Reserve Field 14"				1
+45	FID_REV_UCH15	"Reserve Field 15"				1
+46	FID_REV_UCH16	"Reserve Field 16"				1
+47	FID_REV_UCH17	"Reserve Field 17"				1
+48	FID_REV_UCH18	"Reserve Field 18"				1
+49	FID_REV_UCH19	"Reserve Field 19"				1
+50	FID_REV_UCH20	"Reserve Field 20"				1			
+101	FID_REV_UC1	"Reserve Field 1"				2
+102	FID_REV_UC2	"Reserve Field 2"				2
+103	FID_REV_UC3	"Reserve Field 3"				2
+104	FID_REV_UC4	"Reserve Field 4"				2
+105	FID_REV_UC5	"Reserve Field 5"				2
+106	FID_REV_UC6	"Reserve Field 6"				2
+107	FID_REV_UC7	"Reserve Field 7"				2
+108	FID_REV_UC8	"Reserve Field 8"				2
+109	FID_REV_UC9	"Reserve Field 9"				2
+110	FID_REV_UC10	"Reserve Field 10"				2
+121	FID_REV_SH1	"Reserve Field 1"				3
+122	FID_REV_SH2	"Reserve Field 2"				3
+123	FID_REV_SH3	"Reserve Field 3"				3
+124	FID_REV_SH4	"Reserve Field 4"				3
+125	FID_REV_SH5	"Reserve Field 5"				3
+126	FID_REV_SH6	"Reserve Field 6"				3
+127	FID_REV_SH7	"Reserve Field 7"				3
+128	FID_REV_SH8	"Reserve Field 8"				3
+129	FID_REV_SH9	"Reserve Field 9"				3
+130	FID_REV_SH10	"Reserve Field 10"				3
+151	FID_CURR_CODE	"Currency Code"					4
+152	FID_TOTAL_NUM	"Total number for general usage"		4
+153	FID_SPDTBL_COD	"Spread Table Code"				4
+154	FID_FD		"Field for general usage"			4
+155	FID_CURR_UNIT	"Currency Unit"					4
+156	FID_LOT_SIZE	"Lot Size"					4
+157	FID_SPARE_US1	"Spare Field 1"					4
+158	FID_SPARE_US2	"Spare Field 2"					4
+159	FID_SPARE_US3	"Spare Field 3"					4
+160	FID_SPARE_US4	"Spare Field 4"					4
+161	FID_REV_US1	"Reserve Field 1"				4
+162	FID_REV_US2	"Reserve Field 2"				4
+163	FID_REV_US3	"Reserve Field 3"				4
+164	FID_REV_US4	"Reserve Field 4"				4
+165	FID_REV_US5	"Reserve Field 5"				4
+166	FID_REV_US6	"Reserve Field 6"				4
+167	FID_REV_US7	"Reserve Field 7"				4
+168	FID_REV_US8	"Reserve Field 8"				4
+169	FID_REV_US9	"Reserve Field 9"				4
+170	FID_REV_US10	"Reserve Field 10"				4
+201	FID_REV_LG1	"Reserve Field 1"				5
+202	FID_REV_LG2	"Reserve Field 2"				5
+203	FID_REV_LG3	"Reserve Field 3"				5
+204	FID_REV_LG4	"Reserve Field 4"				5
+205	FID_REV_LG5	"Reserve Field 5"				5
+206	FID_REV_LG6	"Reserve Field 6"				5
+207	FID_REV_LG7	"Reserve Field 7"				5
+208	FID_REV_LG8	"Reserve Field 8"				5
+209	FID_REV_LG9	"Reserve Field 9"				5
+210	FID_REV_LG10	"Reserve Field 10"				5
+251	FID_REJ_TRD	"Rejected Trade Key"				6
+252	FID_BID_QTY	"Bid Quantity"					6
+253	FID_ASK_QTY	"Ask Quantity"					6
+254	FID_OPEN_INT	"Open Interest"					6
+255	FID_SPARE_UL1	"Spare Field 1"					6
+256	FID_SPARE_UL2	"Spare Field 2"					6
+257	FID_LINK	"Page Link for General Purpose"			6
+258	FID_PLINK	"Previous Page Link"				6
+259	FID_NLINK	"Next Page Link"				6
+260	FID_SPARE_UL3	"Spare Field 3"					6
+261	FID_REV_UL1	"Reserve field 1"				6
+262	FID_REV_UL2	"Reserve field 2"				6
+263	FID_REV_UL3	"Reserve field 3"				6
+264	FID_REV_UL4	"Reserve field 4"				6
+265	FID_REV_UL5	"Reserve field 5"				6
+266	FID_REV_UL6	"Reserve field 6"				6
+267	FID_REV_UL7	"Reserve field 7"				6
+268	FID_REV_UL8	"Reserve field 8"				6
+269	FID_REV_UL9	"Reserve field 9"				6
+270	FID_REV_UL10	"Reserve field 10"				6
+271	FID_REV_UL11	"Reserve field 11"				6
+272	FID_REV_UL12	"Reserve field 12"				6
+273	FID_REV_UL13	"Reserve field 13"				6
+274	FID_REV_UL14	"Reserve field 14"				6
+275	FID_REV_UL15	"Reserve field 15"				6
+276	FID_REV_UL16	"Reserve field 16"				6
+277	FID_REV_UL17	"Reserve field 17"				6
+278	FID_REV_UL18	"Reserve field 18"				6
+279	FID_REV_UL19	"Reserve field 19"				6
+280	FID_REV_UL20	"Reserve field 20"				6
+281	FID_INT_PRE	"Initial Premium"				7
+282	FID_1MCHG	"1 Month Percentage Change"			7
+283	FID_3MCHG	"3 Months Percentage Change"			7
+284	FID_12MTH_PCHG	"12 Months Percentage Change"			7
+285	FID_NETCHG	"Net Change"					7
+286	FID_PCTCHG	"Percentage Change"				7
+287	FID_PREMIUM	"Premium"					7
+288	FID_SPARE_FT1	"Spare Field 1"					7
+289	FID_SPARE_FT2	"Spare Field 2"					7
+290	FID_SPARE_FT3	"Spare Field 3"					7
+291	FID_REV_FT1	"Reserve Field 1"				7
+292	FID_REV_FT2	"Reserve Field 2"				7
+293	FID_REV_FT3	"Reserve Field 3"				7
+294	FID_REV_FT4	"Reserve Field 4"				7
+295	FID_REV_FT5	"Reserve Field 5"				7
+296	FID_REV_FT6	"Reserve Field 6"				7
+297	FID_REV_FT7	"Reserve Field 7"				7
+298	FID_REV_FT8	"Reserve Field 8"				7
+299	FID_REV_FT9	"Reserve Field 9"				7
+300	FID_REV_FT10	"Reserve Field 10"				7
+301	FID_DHG		"Day High"					8
+302	FID_DLW		"Day Low"					8
+303	FID_PRE_CLS	"Previous Close"				8
+304	FID_NOMINAL	"Nominal Price"					8
+305	FID_YHG		"Year High"					8
+306	FID_YLW		"Year Low"					8
+307	FID_BID_SPD	"Bid Spread"					8
+308	FID_ASK_SPD	"Ask Spread"					8
+309	FID_BID		"Bid Price"					8
+310	FID_ASK		"Ask Price"					8
+311	FID_EIPOP	"EIPO Price"					8
+312	FID_LHG		"Life High"					8
+313	FID_LLW		"Life Low"					8
+314	FID_IEP		"Indicative Equilibrium Price(IEP)"		8
+315	FID_VAR		"Percentage of Variation"			8
+316	FID_WEIGHT	"Weight Average"				8
+317	FID_FLUCT	"Fluctuation"					8
+318	FID_SPARE_UF1	"Spare Field 1"					8
+319	FID_RSI14	"14 Days RSI"					8
+320	FID_MA10	"10 Days Moving Average"			8
+321	FID_MA50	"50 Days Moving Average"			8
+322	FID_OPEN	"Open Price"					8
+323	FID_CASH_DIV	"Cash Dividend"					8
+324	FID_PER		"PE Ratio"					8
+325	FID_YIELD	"Yield"						8
+326	FID_BVAL	"Book Value"					8
+327	FID_BIR		"Bonus Issue Ratio"				8
+328	FID_OCE		"Other Cash Entitlement"			8
+329	FID_SPARE_UF2	"Spare Field 2"					8
+330	FID_SPARE_UF3	"Spare Field 3"					8
+331	FID_GEN_UF1	"Generic Field 1"				8
+332	FID_GEN_UF2	"Generic Field 2"				8
+333	FID_GEN_UF3	"Generic Field 3"				8
+334	FID_GEN_UF4	"Generic Field 4"				8
+335	FID_EPS		"Earning Per Share"				8
+336	FID_EPS_FY1	"Earning Per Share FY 1"			8
+337	FID_EPS_FY2	"Earning Per Share FY 2"			8
+338	FID_PE_FY1	"PE FY 1"					8
+339	FID_PE_FY2	"PE FY 2"					8
+340	FID_PBR		"Price Book Ratio"				8
+341	FID_SPARE_UF4	"Spare Field 4"					8
+342	FID_SPARE_UF5	"Spare Field 5"					8
+343	FID_GEAR	"Gearing Ratio"					8
+344	FID_DELTA	"Delta"						8
+345	FID_CONV_RT	"Conversion Ratio"				8
+346	FID_STR_PRICE	"Strike Price"					8
+347	FID_GEN_UF5	"Generic Field 5"				8
+348	FID_GEN_UF6	"Generic Field 6"				8
+349	FID_GEN_UF7	"Generic Field 7"				8
+350	FID_GEN_UF8	"Generic Field 8"				8
+351	FID_GEN_UF9	"Generic Field 9"				8
+352	FID_GEN_UF10	"Generic Field 10"				8
+353	FID_INTIND_VOL	"Initial Indicative Volume"			8
+354	FID_IV		"Implied Volatility"				8
+355	FID_CR		"Coupon Rate"					8
+356	FID_FACEVL	"Face Value"					8
+357	FID_NAV		"Net Asset Value"				8
+358	FID_ACC_INT	"Accrued Interest"				8
+359	FID_CURR_YIELD	"Current Yield"					8
+360	FID_YTM		"Yield to Maturity"				8
+361	FID_REV_UFT1	"Reserve field 1"				8
+362	FID_REV_UFT2	"Reserve field 2"				8
+363	FID_REV_UFT3	"Reserve field 3"				8
+364	FID_REV_UFT4	"Reserve field 4"				8
+365	FID_REV_UFT5	"Reserve field 5"				8
+366	FID_REV_UFT6	"Reserve field 6"				8
+367	FID_REV_UFT7	"Reserve field 7"				8
+368	FID_REV_UFT8	"Reserve field 8"				8
+369	FID_REV_UFT9	"Reserve field 9"				8
+370	FID_REV_UFT10	"Reserve field 10"				8
+371	FID_SHROUT	"Share Outstanding"				10
+372	FID_SHRTRD	"Shared Traded"					10
+373	FID_TURN	"Turnover"					10
+374	FID_IEV		"Indicative Equilibrium Volume (IEV)"		10
+375	FID_MKT_CAP	"Market Capital"				10
+376	FID_ACC_VOL1	"Accumulated Volume 1 for automatch"		10
+377	FID_ACC_TURN1	"Accumulated Turnover1 for automatch"		10
+378	FID_ACC_VOL2	"Accumulated Volume 2 for all"			10
+379	FID_ACC_TURN2	"Accumulated Turnover 2 for all"		10
+380	FID_SPARE_UD1	"Spare Field 1"					10
+381	FID_REV_DB1	"Reserve field 1"				9
+382	FID_REV_DB2	"Reserve field 2"				9
+383	FID_REV_DB3	"Reserve field 3"				9
+384	FID_REV_DB4	"Reserve field 4"				9
+385	FID_REV_DB5	"Reserve field 5"				9
+386	FID_REV_DB6	"Reserve field 6"				9
+387	FID_REV_DB7	"Reserve field 7"				9
+388	FID_REV_DB8	"Reserve field 8"				9
+389	FID_REV_DB9	"Reserve field 9"				9
+390	FID_REV_DB10	"Reserve field 10"				9
+401	FID_EN_NAME	"Stock Name (English)"				11
+402	FID_CH_NAME	"Stock Name (Local Language)"			11
+403	FID_ISIN	"ISIN Code"					11
+404	FID_PNAC	"News ID from REUTERS"				11
+405	FID_CONTR_MTH	"Contract Month"				11
+406	FID_NEWSLINE1	"News Line 1"					11
+407	FID_NEWSLINE2	"News Line 2"					11
+408	FID_NEWSLINE3	"News Line 3"					11
+409	FID_NEWSLINE4	"News Line 4"					11
+410	FID_NEWSLINE5	"News Line 5"					11
+411	FID_RICNAME	"IDN_SELECTFEED RIC Name"			11
+412	FID_EN_MSG	"English Sub Title"				11
+413	FID_CH_MSG	"Chinese Sub Title"				11
+414	FID_SPARE_TXT1	"Spare Field 1"					11
+415	FID_SPARE_TXT2	"Spare Field 2"					11
+416	FID_GEN_TXT1	"Generic Text 1"				11
+417	FID_GEN_TXT2	"Generic Text 2"				11
+418	FID_GEN_TXT3	"Generic Text 3"				11
+419	FID_GEN_TXT4	"Generic Text 4"				11
+420	FID_GEN_TXT5	"Generic Text 5"				11
+421	FID_GEN_TXT6	"Generic Text 6"				11
+422	FID_GEN_TXT7	"Generic Text 7"				11
+423	FID_GEN_TXT8	"Generic Text 8"				11
+424	FID_GEN_TXT9	"Generic Text 9"				11
+425	FID_GEN_TXT10	"Generic Text 10"				11
+426	FID_GEN_TXT11	"Generic Text 11"				11
+427	FID_GEN_TXT12	"Generic Text 12"				11
+428	FID_GEN_TXT13	"Generic Text 13"				11
+429	FID_GEN_TXT14	"Generic Text 14"				11
+430	FID_GEN_TXT15	"Generic Text 15"				11
+431	FID_GEN_TXT16	"Generic Text 16"				11
+432	FID_GEN_TXT17	"Generic Text 17"				11
+433	FID_GEN_TXT18	"Generic Text 18"				11
+434	FID_GEN_TXT19	"Generic Text 19"				11
+435	FID_GEN_TXT20	"Generic Text 20"				11
+436	FID_GEN_TXT21	"Generic Text 21"				11
+437	FID_GEN_TXT22	"Generic Text 22"				11
+438	FID_GEN_TXT33	"Generic Text 23"				11
+439	FID_GEN_TXT24	"Generic Text 24"				11
+440	FID_GEN_TXT25	"Generic Text 25"				11
+441	FID_REV_TXT1	"Reserve Binary Data Line  1"			11
+442	FID_REV_TXT2	"Reserve Binary Data Line  2"			11
+443	FID_REV_TXT3	"Reserve Binary Data Line  3"			11
+444	FID_REV_TXT4	"Reserve Binary Data Line  4"			11
+445	FID_REV_TXT5	"Reserve Binary Data Line  5"			11
+446	FID_REV_TXT6	"Reserve Binary Data Line  6"			11
+447	FID_REV_TXT7	"Reserve Binary Data Line  7"			11
+448	FID_REV_TXT8	"Reserve Binary Data Line  8"			11
+449	FID_REV_TXT9	"Reserve Binary Data Line  9"			11
+450	FID_REV_TXT10	"Reserve Binary Data Line  10"			11			
+451	FID_TXT_PG	"Teletext Page"					12
+452	FID_TXT_CH_PG	"Chinese Teletext Page"				12
+453	FID_SITE_DATA	"Site Data"					12
+454	FID_REV_PG1	"Reserve Multiple Line 1"			12
+455	FID_REV_PG2	"Reserve Multiple Line 2"			12
+456	FID_REV_PG3	"Reserve Multiple Line 3"			12
+457	FID_REV_PG4	"Reserve Multiple Line 4"			12
+458	FID_REV_PG5	"Reserve Multiple Line 5"			12
+459	FID_REV_PG6	"Reserve Multiple Line 6"			12
+460	FID_REV_PG7	"Reserve Multiple Line 7"			12
+461	FID_REV_PG8	"Reserve Multiple Line 8"			12
+462	FID_REV_PG9	"Reserve Multiple Line 9"			12
+463	FID_REV_PG10	"Reserve Multiple Line 10"			12
+464	FID_REV_PG11	"Reserve Multiple Line 11"			12
+465	FID_REV_PG12	"Reserve Multiple Line 12"			12
+466	FID_REV_PG13	"Reserve Multiple Line 13"			12
+467	FID_REV_PG14	"Reserve Multiple Line 14"			12
+468	FID_REV_PG15	"Reserve Multiple Line 15"			12
+469	FID_REV_PG16	"Reserve Multiple Line 16"			12
+470	FID_REV_PG17	"Reserve Multiple Line 17"			12
+1101	FID_LIST_DATE	"Listing Date"					13
+1102	FID_DELIST_DATE	"Delisting date"				13
+1103	FID_EIPO_SDATE	"EIPO Start Date"				13
+1104	FID_EIPO_EDATE	"EIPO End Date"					13
+1105	FID_SYS_DATE	"System Date"					13
+1106	FID_TRD_DATE	"Trade Date"					13
+1107	FID_LHD		"Life High Date"				13
+1108	FID_LWD		"Life Low Date"					13
+1109	FID_MAT_DT	"Maturity Date"					13
+1110	FID_BMD		"Board Meeting Date"				13
+1111	FID_BCSD	"Book Closing Start date"			13
+1112	FID_BCND	"Book Closing End date"				13
+1113	FID_EXD		"Ex-Date"					13
+1114	FID_NAVD	"Net Asset Value Date"				13
+1115	FID_PREV_DATE	"Previous Close Date"				13
+1116	FID_DIV_DATE	"Dividend Date"					13
+1117	FID_REV_DATE1	"Reserve field 1"				13
+1118	FID_REV_DATE2	"Reserve field 2"				13
+1119	FID_REV_DATE3	"Reserve field 3"				13
+1120	FID_REV_DATE4	"Reserve field 4"				13
+1201	FID_SYS_TIME	"System Time 1 (hhmmss)"			16
+1202	FID_REV_SEC1	"Reserve field 1"				16
+1203	FID_REV_SEC2	"Reserve field 2"				16
+1204	FID_REV_SEC3	"Reserve field 3"				16
+1211	FID_TRT_MIN	"Trade Time 2 (hhmm)"				15
+1212	FID_EIPO_ST	"EIPO Start Time"				15
+1213	FID_EIPO_ET	"EIPO End Time"					15
+1214	FID_DELAY	"Delay Time For The Record"			15
+1215	FID_REV_MIN1	"Reserve fields 1"				15
+1216	FID_REV_MIN2	"Reserve fields 2"				15
+1217	FID_REV_MIN3	"Reserve fields 3"				15
+1218	FID_REV_MIN4	"Reserve fields 4"				15
+1219	FID_REV_MIN5	"Reserve fields 5"				15
+1220	FID_REV_MIN6	"Reserve fields 6"				15
+1301	FID_TRAN_LOG	"Transaction Log"				18
+1302	FID_BS_STRENGTH	"Buy Sell Strength"				25
+1303	FID_PRC_VOL	"Price Bid Neutral Ask"				21				
+1304	FID_TXN_LOG	"Transaction Log Rebuild"			19				
+1305	FID_MTC_VAL	"MTC Rebuild Value"				29				
+1306	FID_BS_STRN_15TICK	"Price Bid Neutral Ask"			25				
+1307	FID_YL_SPARE1	"Reserved"					25				
+1308	FID_YL_SPARE2	"Reserved"					25				
+1309	FID_YL_SPARE3	"Reserved"					25				
+1310	FID_PRC_VOL2	"Reserved"					21				
+1351	FID_EN_LBLST	"English Field Label for Quote List"		33
+1352	FID_CH_LBLST	"Chinese Field Label for Quote List"		33
+1353	FID_FDLST	"Field List for Quote List"			32
+1354	FID_TYPE_LST	"Type List"					32
+1355	FID_FDLINK	"Field List for Chain"				32
+1356	FID_REV_LST1	"Reserve Field List 1"				32
+1357	FID_REV_LST2	"Reserve Field List 2"				32
+1358	FID_REV_LST3	"Reserve Field List 3"				32
+1359	FID_REV_LST4	"Reserve Field List 4"				32
+1360	FID_REV_LST5	"Reserve Field List 5"				32
+1361	FID_BBL		"Bid Broker List"				22
+1362	FID_ABL		"Ask Broker List"				22
+1371	FID_BID_ORD1	"Bid Shares and Order List1"			20
+1372	FID_BID_ORD2	"Bid Shares and Order List2"			20
+1373	FID_BID_ORD3	"Bid Shares and Order List3"			20
+1374	FID_BID_ORD4	"Bid Shares and Order List4"			20
+1375	FID_BID_ORD5	"Bid Shares and Order List5"			20
+1376	FID_ASK_ORD1	"Ask Shares and Order List1"			20
+1377	FID_ASK_ORD2	"Ask Shares and Order List2"			20
+1378	FID_ASK_ORD3	"Ask Shares and Order List3"			20
+1379	FID_ASK_ORD4	"Ask Shares and Order List4"			20
+1380	FID_ASK_ORD5	"Ask Shares and Order List5"			20
+1381	FID_SLINK	"General Page Link"				23
+1382	FID_BLINK	"Register Trader Link"				23
+1383	FID_ILINK	"Index Link"					23
+1384	FID_ULINK	"Underlying Link"				23
+1385	FID_CLINK	"Constituents Link"				23
+1386	FID_SPARE_LINK1	"Spare link 1"					23
+1387	FID_SPARE_LINK2	"Spare link 2"					23
+1388	FID_SPARE_LINK3	"Spare link 3"					23
+1389	FID_SPARE_LINK4	"Spare link 4"					23
+1390	FID_SPARE_LINK5	"Spare link 5"					23
+1391	FID_HEADLINE_LINK	"Headline Link"				36
+1392	FID_HEADLINE	"News Headline"					35
+1401	FID_WLINK	"Weight Page Link"				24
+1402	FID_TLSG_LIST	"Transaction Log"				19
+1403	FID_MTC_HML	"Minute Tick Chart¡¦s Y-axis Label"		25
+1404	FID_MTC_PTS	"Mini Chart Data (Image)"			28
+1405	FID_TM_RANGE	"Time Range"					17
+1406	FID_MTH_HML	"Inter Date Tick Chart¡¦s Y-axis label"		25
+1407	FID_MTH_DATA	"Inter Day Chart"				30
+1408	FID_TM_LAB	"x-axis time label"				26
+1409	FID_DT_LAB	"x-axis date label"				27
+1410	FID_HIS_DATA	"Historical Data"				31
+1411	FID_IBLE	"Info bar message"				34
+1412	FID_IBLU	"Info bar message"				34

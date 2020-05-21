@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e1bd702a-832f-4281-ae5a-4ca15ba25980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{ca9699a0-b517-49eb-a183-d0dcecafb7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{43f16b3d-5d6c-43b7-b6d1-8cecb85632f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ssCharacterSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssCountedObjPtr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssCriticalSection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssMMTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssMultiWait.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssMutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssSharedMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssUtf8string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JCriticalSectionEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssDailyTimerUTC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ssDailyTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ssAll.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssBitTable.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCharacterSet.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCommon.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCOPActiveBuffer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCOPBuffer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCOPMultiActiveBuffer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCountedObjPtr.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssCriticalSection.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssDefines.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssEvent.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssMMTimer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssMultiWait.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssMutex.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssSharedMemory.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssSocket.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssThread.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssTimer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssUtf8String.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JCriticalSectionEx.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FIFOx.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssDailyTimer.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ssDailyTimerUTC.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\resource.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="UpgradeLog.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SystemServices.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

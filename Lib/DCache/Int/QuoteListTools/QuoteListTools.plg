@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: QuoteListTools - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/QuoteListTools.res" /d "NDEBUG" /d "_AFXDLL" "C:\ngn2\lib\dcache\int\QuoteListTools\QuoteListTools.rc"" 
+Creating temporary file "C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4A6.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "../include" /I "..\..\..\SystemServices\INT\Include" /I "..\..\..\MsgObject\INT\Include" /I "..\..\..\DataCtrl\INT\Include" /I "..\..\..\Dcache\INT\Include" /I "..\..\..\DataManager\INT\Include" /I "..\..\..\TCPCtrl\INT\Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/QuoteListTools.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\ngn2\lib\dcache\int\QuoteListTools\ABTPanelEx.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\DTFidIterator.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\JFile.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\JRegistry.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\LogFilterDlg.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\LogSchedule.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\MsgQueueManager.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\QTFidIterator.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\QuoteListTools.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\QuoteListToolsDlg.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\SelTextDlg.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\SendMessageDialog.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\SocketServerDlg.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\StatisticDlg.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\StatisticPage.cpp"
+"C:\ngn2\lib\dcache\int\QuoteListTools\STFidIterator.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4A6.tmp" 
+Creating temporary file "C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4A7.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "../include" /I "..\..\..\SystemServices\INT\Include" /I "..\..\..\MsgObject\INT\Include" /I "..\..\..\DataCtrl\INT\Include" /I "..\..\..\Dcache\INT\Include" /I "..\..\..\DataManager\INT\Include" /I "..\..\..\TCPCtrl\INT\Include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/QuoteListTools.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\ngn2\lib\dcache\int\QuoteListTools\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4A7.tmp" 
+Creating temporary file "C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4A8.tmp" with contents
+[
+dcache.lib SystemServices.lib msgobj.lib DataCtrl.lib DataManager.lib TCPCtrl.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/QuoteListTools.pdb" /map:"Release/QuoteListTools.map" /debug /machine:I386 /out:"Release/QuoteListTools.exe" /libpath:"../RELEASE" /libpath:"../../..\MsgObject\int\RELEASE" /libpath:"../../../SystemServices/int/RELEASE\\" /libpath:"../../..\DataCtrl\int\RELEASE" /libpath:"../../..\DataManager\int\release" /libpath:"../../..\TCPCtrl\int\RELEASE" 
+.\Release\ABTPanelEx.obj
+.\Release\DTFidIterator.obj
+.\Release\JFile.obj
+.\Release\JRegistry.obj
+.\Release\LogFilterDlg.obj
+.\Release\LogSchedule.obj
+.\Release\MsgQueueManager.obj
+.\Release\QTFidIterator.obj
+.\Release\QuoteListTools.obj
+.\Release\QuoteListToolsDlg.obj
+.\Release\SelTextDlg.obj
+.\Release\SendMessageDialog.obj
+.\Release\SocketServerDlg.obj
+.\Release\StatisticDlg.obj
+.\Release\StatisticPage.obj
+.\Release\StdAfx.obj
+.\Release\STFidIterator.obj
+.\Release\QuoteListTools.res
+]
+Creating command line "link.exe @C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4A8.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ABTPanelEx.cpp
+DTFidIterator.cpp
+JFile.cpp
+JRegistry.cpp
+LogFilterDlg.cpp
+LogSchedule.cpp
+MsgQueueManager.cpp
+QTFidIterator.cpp
+QuoteListTools.cpp
+QuoteListToolsDlg.cpp
+SelTextDlg.cpp
+SendMessageDialog.cpp
+SocketServerDlg.cpp
+StatisticDlg.cpp
+StatisticPage.cpp
+STFidIterator.cpp
+Linking...
+   Creating library Release/QuoteListTools.lib and object Release/QuoteListTools.exp
+Creating temporary file "C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4AC.bat" with contents
+[
+@echo off
+copy ..\..\..\DataCtrl\INT\release\datactrl.dll release
+copy ..\..\..\Dcache\INT\release\dcache.dll release
+copy ..\..\..\TcpCtrl\INT\release\TcpCtrl.dll release
+]
+Creating command line "C:\DOCUME~1\RAYMON~1\LOCALS~1\Temp\RSP4AC.bat"
+
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+QuoteListTools.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

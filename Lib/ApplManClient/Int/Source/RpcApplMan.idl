@@ -1,0 +1,13 @@
+[
+	uuid(039e14f0-7960-11d2-bdc9-00c04f881f8d),
+	version(1.0),
+	pointer_default(unique)
+]
+interface ApplManServer
+{
+	boolean Log([in] long appId, [in] short level, [in, string]unsigned char* pMsg);
+	boolean Trace([in] long appId, [in, string]unsigned char* pMsg);
+	boolean Alert([in] long appId, [in, string]unsigned char* pMsg);
+	boolean SetDataCtrlStatus([in] long appId, [in] long lStatus);
+}
+

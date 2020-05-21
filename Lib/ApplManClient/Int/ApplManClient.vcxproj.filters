@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{f58b9224-72eb-49b9-8ecf-eeb0f330264a}</UniqueIdentifier>
+      <Extensions>*.cpp, *.c</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{4dae8bc9-4eef-4ca8-83bb-ce88b5aed468}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{dd963ec8-8746-4adf-a77c-09e11d6f5bed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ApplManClient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RpcApplMan_c.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\ApplManClient.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MsgLevel.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\RpcApplMan.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ApplManClient.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Source\RpcApplMan.idl">
+      <Filter>Source</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\RpcApplMan.acf">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+</Project>
